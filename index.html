@@ -1,138 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Perinatal Insights</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Lato&display=swap" rel="stylesheet">
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Lato', sans-serif;
-      background-color: #f1ebec;
-      color: #422e28;
-    }
-    header {
-      background-color: #f1ebec;
-      padding: 1rem 2rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    header h1 {
-      font-family: 'Playfair Display', serif;
-      color: #008080;
-      margin: 0;
-    }
-    nav a {
-      margin-left: 1rem;
-      text-decoration: none;
-      color: #422e28;
-      font-weight: bold;
-    }
-    .hero {
-      background-color: #008080;
-      color: white;
-      padding: 4rem 2rem;
-      text-align: center;
-    }
-    .hero h2 {
-      margin: 0 0 1rem;
-    }
-    .hero p {
-      max-width: 600px;
-      margin: 0 auto;
-    }
-    .section {
-      padding: 3rem 2rem;
-      max-width: 1000px;
-      margin: auto;
-    }
-    .section h3 {
-      color: #008080;
-      font-family: 'Playfair Display', serif;
-    }
-    .services, .shop {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 2rem;
-    }
-    .card {
-      background: white;
-      padding: 1rem;
-      border-left: 5px solid #d3a43e;
-      flex: 1 1 45%;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    }
-    footer {
-      background-color: #422e28;
-      color: white;
-      text-align: center;
-      padding: 1rem;
-    }
-    @media (max-width: 768px) {
-      .services, .shop {
-        flex-direction: column;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <!-- Header -->
   <header>
-    <h1>Perinatal Insights</h1>
     <nav>
-      <a href="#about">About</a>
-      <a href="#services">Services</a>
-      <a href="#shop">Shop</a>
-      <a href="#contact">Contact</a>
+      <a href="index.html">
+        <img src="/images/logo.png" alt="Perinatal Insights Logo" class="logo" />
+      </a>
+      <ul class="nav-links">
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
     </nav>
   </header>
 
+  <!-- Hero Section -->
   <section class="hero">
-    <h2>Empowering Every Perinatal Journey</h2>
-    <p>We provide culturally affirming support, resources, and community for birthing people through every stage of the perinatal period.</p>
+    <h1>Welcome to Perinatal Insights</h1>
+    <p>Your trusted resource for perinatal mental health and wellness.</p>
   </section>
 
-  <section id="about" class="section">
-    <h3>About Us</h3>
-    <p>Perinatal Insights, LLC is dedicated to uplifting and supporting birthing people, especially those who have been historically underserved. Our services, education, and community offerings are designed with intention, compassion, and cultural awareness.</p>
-  </section>
-
-  <section id="services" class="section">
-    <h3>Our Services</h3>
-    <div class="services">
-      <div class="card">
-        <h4>Workshops & Trainings</h4>
-        <p>Expert-led sessions focused on perinatal mental health, trauma-informed care, and culturally relevant support practices.</p>
-      </div>
-      <div class="card">
-        <h4>Consultation</h4>
-        <p>For providers, clinics, and organizations seeking to improve culturally affirming perinatal care.</p>
-      </div>
+  <!-- Homepage Previews -->
+  <section class="previews">
+    <div class="preview">
+      <h2>About Us</h2>
+      <p>Learn more about our mission and who we serve.</p>
+      <a href="about.html" class="btn">Learn More</a>
+    </div>
+    <div class="preview">
+      <h2>Services</h2>
+      <p>Explore our perinatal mental health and support services.</p>
+      <a href="services.html" class="btn">View Services</a>
+    </div>
+    <div class="preview">
+      <h2>Shop</h2>
+      <p>Browse our curated postpartum kits, workbooks, and card decks.</p>
+      <a href="shop.html" class="btn">Visit Shop</a>
+    </div>
+    <div class="preview">
+      <h2>Resources</h2>
+      <p>Access free downloads and tools for your perinatal journey.</p>
+      <a href="resources.html" class="btn">View Resources</a>
     </div>
   </section>
 
-  <section id="shop" class="section">
-    <h3>Shop Highlights</h3>
-    <div class="shop">
-      <div class="card">
-        <h4>Postpartum Journal</h4>
-        <p>A guided reflection tool for new parents navigating healing, identity, and joy.</p>
-      </div>
-      <div class="card">
-        <h4>Affirmation Card Deck</h4>
-        <p>Daily reminders of strength, power, and rest for the perinatal journey.</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="contact" class="section">
-    <h3>Contact Us</h3>
-    <p>Ready to connect or collaborate? Email us at <a href="mailto:info@perinatalinsights.com">info@perinatalinsights.com</a></p>
-  </section>
-
+  <!-- Footer -->
   <footer>
-    <p>&copy; 2025 Perinatal Insights, LLC. All rights reserved.</p>
+    <p>&copy; 2025 Perinatal Insights. All rights reserved.</p>
   </footer>
 </body>
 </html>

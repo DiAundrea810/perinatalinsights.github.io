@@ -16,14 +16,14 @@ body {
 
 header {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  background-color: var(--teal);
-  padding: 1rem 2rem;
+  justify-content: space-between;
+  padding: 10px 20px;
 }
 
-.logo {
-  height: 50px;
+header img.logo {
+  height: 60px; /* adjust size */
+  width: auto;
 }
 
 nav ul {
